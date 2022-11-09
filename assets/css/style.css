@@ -1,0 +1,72 @@
+body {
+    font-family: inherit;
+    padding: 0 2rem;
+}
+
+main {
+    display: flex;
+}
+
+header {
+    text-align: center;
+}
+
+.header-inner {
+    display: grid;
+    width: 100%;
+    height: 48px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.footer-inner {
+    display: grid;
+    width: 100%;
+    height: 48px;
+    align-items: center;
+    border-top: 1px solid black;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.inline-left {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+}
+
+.inline-right {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+}
+
+.about-me {
+    display: grid;
+    width: 100%;
+    height: 48px;
+    align-items: center;
+    grid-template-columns:repeat(2,1fr);
+}
+
+.work-inner {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    margin-top: 400px;
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+.page-width {
+    padding: 0 1rem;
+}
+
+.about-me-text {
+    text-align: center;
+    padding: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
