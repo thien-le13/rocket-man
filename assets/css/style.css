@@ -5,6 +5,8 @@ body {
 
 main {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header {
@@ -21,12 +23,11 @@ header {
 }
 
 .footer-inner {
-    display: grid;
-    width: 100%;
+    display: flex;
     height: 48px;
     align-items: center;
+    justify-content: space-between;
     border-top: 1px solid black;
-    grid-template-columns:repeat(3,1fr);
 }
 
 .inline-left {
@@ -42,29 +43,30 @@ header {
 }
 
 .about-me {
-    display: grid;
-    width: 100%;
-    height: 48px;
-    align-items: center;
-    grid-template-columns:repeat(2,1fr);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
 }
 
 .work-inner {
-    display: grid;
-    width: 100%;
-    align-items: center;
-    margin-top: 400px;
-    grid-template-columns: repeat(4,1fr);
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: space-evenly;
+    margin-top: 30px;
 }
 
 .page-width {
     padding: 0 1rem;
 }
 
-.about-me-text {
-    text-align: center;
-    padding: 15px;
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .text-center {
